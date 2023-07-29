@@ -22,5 +22,3 @@ $router->group(['prefix' => 'api/v1'], function () use ($router) {
     $router->get('/transactaions','TransactionController@filter');
 });
 
-$router->get('/testGetTransactions', 'TransactionControllerTest@testGetTransactions' );
-
