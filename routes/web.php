@@ -16,7 +16,7 @@
 $router->get('/', function () use ($router) {
     return $router->app->version();
 });
-$router->get('/import', 'TransactionController@import' );
+$router->get('/', 'TransactionController@import' );
 
 $router->group(['prefix' => 'api/v1'], function () use ($router) {
     $router->get('/transactaions','TransactionController@filter');
